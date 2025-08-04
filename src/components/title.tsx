@@ -38,6 +38,6 @@ function SectionTitle({ className = "", ...props }: TitleProps) {
 namespace Title {
   export const Page = PageTitle;
   export const Section = SectionTitle;
-};
+}
 
 export default Title;
