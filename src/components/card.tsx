@@ -74,5 +74,4 @@ namespace Card {
   export const Tag = TagCard;
 }
 
-
 export default Card;

@@ -59,7 +59,7 @@ namespace BulletList {
 }
 
 namespace List {
-  export const Item = ListItem; 
+  export const Item = ListItem;
   export const Horizontal = HorizontalList;
   export const Bullet = BulletList;
 }
