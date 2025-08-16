@@ -38,7 +38,7 @@
             npmConfigHook = importNpmLock.npmConfigHook;
 
             installPhase = ''
-              mkdir -p $out 
+              mkdir -p $out
               mv .next/* $out
             '';
           };
