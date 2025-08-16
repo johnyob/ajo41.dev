@@ -21,6 +21,17 @@ const publicationsData = [
       code: "https://github.com/johnyob/mlsus",
     },
   },
+  {
+    title: "Typing OCaml in OCaml: A Constraint-Based Approach",
+    authors: ["Alistair O'Brien"],
+    venue: "Part II Dissertation",
+    year: 2022,
+    status: "submitted" as const,
+    links: {
+      pdf: "/papers/typing-ocaml-in-ocaml.pdf",
+      code: "https://github.com/johnyob/dromedary",
+    },
+  },
 ];
 
 export default function Publications() {
