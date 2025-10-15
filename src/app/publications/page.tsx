@@ -24,6 +24,16 @@ const publicationsData = [
   {
     title: "Typing OCaml in OCaml: A Constraint-Based Approach",
     authors: ["Alistair O'Brien"],
+    venue: "PhD Proposal",
+    year: 2025,
+    status: "submitted" as const,
+    links: {
+      pdf: "/papers/first-year-report.pdf",
+    },
+  },
+  {
+    title: "Typing OCaml in OCaml: A Constraint-Based Approach",
+    authors: ["Alistair O'Brien"],
     venue: "Part II Dissertation",
     year: 2022,
     status: "submitted" as const,
