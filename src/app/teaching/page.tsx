@@ -53,6 +53,15 @@ export default function Teaching() {
           </Title.Section>
           <div className="space-y-6">
             <Supervision
+              title="Compiler Construction"
+              institution="University of Cambridge"
+              description="Supervised students in compilers, covering parsing, CPS-based IRs, and advanced topics."
+              supervisions={[
+                { title: "Supervision 1", pdf: "/teaching/compilers/supo1.pdf" },
+              ]}
+            />
+
+            <Supervision
               title="Computation Theory"
               institution="University of Cambridge"
               description="Supervised students in theoretical computer science, covering computability theory, complexity theory, and formal languages."
