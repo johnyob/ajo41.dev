@@ -58,6 +58,7 @@ export default function Teaching() {
               description="Supervised students in compilers, covering parsing, CPS-based IRs, and advanced topics."
               supervisions={[
                 { title: "Supervision 1", pdf: "/teaching/compilers/supo1.pdf" },
+                { title: "Supervision 2", pdf: "/teaching/compilers/supo2.pdf" },
               ]}
             />
 
