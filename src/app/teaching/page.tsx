@@ -59,6 +59,7 @@ export default function Teaching() {
               supervisions={[
                 { title: "Supervision 1", pdf: "/teaching/compilers/supo1.pdf" },
                 { title: "Supervision 2", pdf: "/teaching/compilers/supo2.pdf" },
+                { title: "Supervision 3", pdf: "/teaching/compilers/supo3.pdf" },
               ]}
             />
 
