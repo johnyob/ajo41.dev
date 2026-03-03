@@ -60,6 +60,7 @@ export default function Teaching() {
                 { title: "Supervision 1", pdf: "/teaching/compilers/supo1.pdf" },
                 { title: "Supervision 2", pdf: "/teaching/compilers/supo2.pdf" },
                 { title: "Supervision 3", pdf: "/teaching/compilers/supo3.pdf" },
+                { title: "Supervision 4", pdf: "/teaching/compilers/supo4.pdf" },
               ]}
             />
 
