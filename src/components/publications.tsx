@@ -25,8 +25,8 @@ const capitalize = (s: string): string => s.charAt(0).toUpperCase() + s.slice(1)
 
 function PublicationItem({ title, authors, venue, year, status, links }: PublicationItemProps) {
   const statusColors = {
-    published: "bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200",
-    talk: "bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200",
+    published: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
+    talk: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
     draft: "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
     preprint: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
     submitted: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",

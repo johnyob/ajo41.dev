@@ -10,9 +10,10 @@ interface CardProps {
 function Card({ children, className = "", hover = false, rounded = "lg" }: CardProps) {
   const hoverClass = hover ? "hover:bg-grey-300 dark:hover:bg-grey-700 transition-colors" : "";
   const roundedClass = `rounded-${rounded}`;
+  const bgClass = className.includes("bg-") ? "" : "bg-grey-200 dark:bg-grey-800";
 
   return (
-    <div className={`bg-grey-200 dark:bg-grey-800 ${roundedClass} ${hoverClass} ${className}`}>
+    <div className={`${bgClass} ${roundedClass} ${hoverClass} ${className}`}>
       {children}
     </div>
   );
