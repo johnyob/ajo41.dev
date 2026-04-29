@@ -2,26 +2,31 @@ import { ReactNode } from "react";
 
 import Card from "@/components/card";
 
-interface PublicationItemProps {
+interface Publication {
   title: string | ReactNode;
   authors: string[];
   venue?: string;
   year: number;
-  status: "published" | "draft" | "preprint" | "submitted";
+  status: "published" | "draft" | "preprint" | "submitted" | "talk";
   links?: {
     pdf?: string;
     arxiv?: string;
     doi?: string;
     code?: string;
     website?: string;
+    slides?: string;
+    recording?: string;
   };
 }
+
+type PublicationItemProps = Publication;
 
 const capitalize = (s: string): string => s.charAt(0).toUpperCase() + s.slice(1);
 
 function PublicationItem({ title, authors, venue, year, status, links }: PublicationItemProps) {
   const statusColors = {
-    published: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
+    published: "bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200",
+    talk: "bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200",
     draft: "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
     preprint: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
     submitted: "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
@@ -55,26 +60,12 @@ function PublicationItem({ title, authors, venue, year, status, links }: Publica
           {links.doi && <Card.Tag.Link href={links.doi}>DOI</Card.Tag.Link>}
           {links.code && <Card.Tag.Link href={links.code}>Code</Card.Tag.Link>}
           {links.website && <Card.Tag.Link href={links.website}>Website</Card.Tag.Link>}
+          {links.slides && <Card.Tag.Link href={links.slides}>Slides</Card.Tag.Link>}
+          {links.recording && <Card.Tag.Link href={links.recording}>Recording</Card.Tag.Link>}
         </div>
       )}
     </Card.Border>
   );
-}
-
-interface Publication {
-  title: string | ReactNode;
-  authors: string[];
-  venue?: string;
-  year: number;
-  status: "published" | "draft" | "preprint" | "submitted";
-  abstract?: string;
-  links?: {
-    pdf?: string;
-    arxiv?: string;
-    doi?: string;
-    code?: string;
-    website?: string;
-  };
 }
 
 interface PublicationsProps {
