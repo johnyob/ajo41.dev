@@ -28,10 +28,10 @@ export default function Home() {
       <div className="w-full max-w-3xl space-y-6 text-center">
         <h1 className="text-4xl font-extrabold tracking-tight text-off-black dark:text-off-white sm:text-5xl md:text-6xl">
           Hey <span className="inline-block origin-70 hover:animate-wave">👋</span> I&apos;m
-          Alistair, <br />a <Pill className="mt-4">developer</Pill>
+          Alistair, <br />a <Pill className="mt-4">PhD student</Pill>
         </h1>
         <p className="mx-auto mt-8 max-w-3xl text-sm text-grey-500 sm:text-base">
-          I am a compiler developer and programming language researcher 🔬
+          I am a programming language PhD student 🔬 and compiler developer 🧑‍💻
         </p>
         <div className="flex w-full flex-col items-center justify-center">
           <Socials data={socialsData} />
